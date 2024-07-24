@@ -1,5 +1,11 @@
 extends ../layout/main.pug
 
+include ../blocks/footer/_footer.pug
+include ../blocks/modal/_modal.pug
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+
 include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
@@ -20,7 +26,8 @@ block pagecontent
 	//- +mob-mnu()
 	
 	
-	+parts('header')
+	+header()
+		+top-nav()
 	main
 		+headerBlock 
 		.container
@@ -33,4 +40,4 @@ block pagecontent
 		+sForm()
 		+sContact()
 		
-	+parts('footer')
+	+footer

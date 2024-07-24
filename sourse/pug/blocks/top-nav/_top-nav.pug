@@ -22,13 +22,11 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			+e.row.row
-				.col-4
-				.col.order-lg-0.order-last
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
-							+menu-toggle()
-							+mnu()
-					
-				.col-auto.d-lg-none
-					+menu-toggle()
+				.col-auto
+					+e.logo
+						+img('img/svg/logo.svg')
+						| Наверх
+						+icon('arrow-up')
+				.col.d-none.d-lg-block Самый простой способ зарабатывать деньги в трейдинге
+				.col-auto.ms-auto: +e.btn.btn.btn-primary.btn-base.link-modal-js(href='#modal-call') Получить доступ сейчас
 	// end top-nav

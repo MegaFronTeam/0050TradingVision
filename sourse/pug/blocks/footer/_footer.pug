@@ -1,9 +1,48 @@
 mixin footer()
 	+b.FOOTER.footer.section
-		.container
+		+e.container.container
+			.before
+				+logo('#DA4053',"146", "126")
 			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+				.col-md.col-lg-5
+					.footer__left-col
+						.footer__txt.footer__txt--h6
+							p
+								script.
+									function InfoDVDCurrentYear(year) {
+										var cur = new Date();
+										if (cur.getFullYear() != year)
+											document.write('© ' + year + '&mdash;' + cur.getFullYear() + " ");
+										else document.write(year);
+									}
+									InfoDVDCurrentYear('2008 ');
+								| Издательство #[a(href='//www.info-dvd.ru/?utm_source=footer_link'  target='_blank') Инфо-ДВД] <br>
+								| Проект #[a(href='//www.infoclub.info/'  target='_blank') «Инфоклуб»]<br>
+								| #[script(src='//info-dvd.ru/codes/js/legal.utf8.js')]
+						.footer__txt
+							p
+								a.tdu(href='//info-dvd.ru/professional/', target='_blank', title='экспертам-авторам (инфо-продюсирование)')
+									| экспертам-авторам (инфо-продюсирование)
+								br
+								a.tdu(href='//info-dvd.ru/about/partnership', target='_blank', title='партнёрская программа')
+									| партнёрская программа
+								br
+								a.tdu(href='//info-dvd.ru/pages/privacy', target='_blank', title='политика конфиденциальности')  политика конфиденциальности
+								br
+								a.tdu(href='//info-dvd.ru/pages/risk-warning', target='_blank', title='предупреждение о рисках')  предупреждение о рисках
+				.col-md-5.col-lg-4.ms-lg-auto
+					.footer__right-col
+						.footer__txt.footer__txt--support.text-lg-end
+							h6 Служба поддержки:
+							p
+								a(href='//info.support-desk.ru/form', target='_blank', title='Задать свой вопрос') Задать свой вопрос
+								a(href='//info.support-desk.ru/?base=1', target='_blank' title='Частые вопросы и ответы на них') Частые вопросы и ответы на них
+						.footer__txt.text-lg-end
+							h6 Позвоните нам:
+							p
+								span
+									script(   src='//info-dvd.ru/codes/js/telephone-number.js')
+								br
+								| или 
+								a.tdu(href='//info-dvd.ru/support/apply/', target='_blank') оставьте свой номер 
+								| &nbsp;и мы вам перезвоним

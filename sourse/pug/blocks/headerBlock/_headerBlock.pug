@@ -1,11 +1,27 @@
 mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
+		+e.container.container
+			+e.img.d-none.d-lg-block
+				+img('img/sHeaderBlock-img-2.png')
+				+e.person-text
+					div(data-bs-toggle="tooltip" data-bs-title=`•&nbsp;Частный инвестор, публичная инвестиционная практика с 2018 года.<br> •&nbsp;Организатор инвестиционного сообщества, ведёт свою мастер-группу с 2019 года (более 500 человек).<br> •&nbsp;Топ-автор Инфо-ДВД. Кредо — продуманные инвестиции с минимальными рисками и минимальным участием эмоций.<br> •&nbsp;С 2004 по 2016 год работал в банковской сфере, сделал успешную карьеру в одном из крупнейших федеральных банков.<br> •&nbsp;Специалист по работе с предприятиями сегмента крупного и крупнейшего бизнеса.`)
+						+iconC('info')
+					p Владимир Чамин
+					span Автор 
 			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+				h1 Trading#[span Vision].PRO
+				h4 Найдите 10+ прибыльных торговых стратегий за 3 секунды
+			+e.row.row
+				.col-sm.col-lg-auto.order-1
+					p Первый в РФ web-сервис для циклического трейдинга
+				.col-lg.order-lg-2.order-3
+					+e.content
+						+img('img/sHeaderBlock-img-1.png')
+						+e.btn.btn.btn-priamry.btn-base.link-modal-js(href='#modal-call') Мгновенный доступ к web-сервису
+				.col-sm-auto.ms-sm-auto.order-lg-3.order-2
+					ul 
+						li Закономерности, которые не видят другие трейдеры
+						li Поиск на любом финансовом инструменте
+						li Нужен только браузер
 	// end headerBlock

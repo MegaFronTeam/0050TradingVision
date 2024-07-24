@@ -59,6 +59,15 @@ function eventHandler() {
 		slideToClickedSlide: true,
 		freeModeMomentum: true,
 	});
+
+	$('[data-bs-toggle="tooltip"]').tooltip({
+		animation: true,
+		html: true
+	});
+
+	document.querySelector('.top-nav__logo').addEventListener('click', () => {
+		window.scrollTo(0, 0);
+	})
 }
 if (document.readyState !== "loading") {
 	eventHandler();

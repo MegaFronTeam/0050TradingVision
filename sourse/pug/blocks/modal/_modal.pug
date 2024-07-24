@@ -3,17 +3,16 @@ mixin modal()
 	//  start modals
 	div(id="modal-call"  style="display: none" )
 		+b.modal-win
-			+form-wrap
-				.text-center
-					+e.title.form-data.h3.ttu Обратный звонок
-					p.after-headline Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут
-
-				+input("Ваше Имя")(required)
-				+input("Ваше телефон",'tel')(required)
-				+input("Ваше телефон",'tel')(required)
-				+e.BUTTON.btn.btn(type="submit"  ) submit
-				+policy()
-				+policy()
+			.ld_progressbar
+				.progress-bar.active(style='width: 50%;')
+			.row
+				.col.d-none.d-lg-block
+					+e.img-wrap
+						+img('img/sAuthor-img-2.png')
+				.col-lg-auto
+					+e.content
+						+e.headline Поздравляем! Вы можете получить доступ бесплатно
+						iframe#ic_sform_13588841707818844_iframe(src='//www.infoclub.info/subscribe_forms/index/163/117e3a80?rid=13588841707818844&loc=https%3A%2F%2Fstart.infoclub.info%2Fcryptostart%2F&ref=' name='ic_sform_13588841707818844_iframe' scrolling='no' frameborder='0' allowtransparency='true' marginwidth='0' marginheight='0' vspace='0' hspace='0' height='undefined' width='100%' onload="window['SForm_163'].registerFrame(this)" style='max-width: 600px;' <='' iframe='')
 	// #modal-call
 
 	

@@ -25,22 +25,66 @@
 	</head>
 	<body class="main-page">
 		<div class="main-wrapper">
-			<script>addBlock(`header`)</script>
-			<div id="headerWrap"></div>
+			<!-- start header-->
+			<header class="header header--js" id="header">
+				<!-- start top-nav-->
+				<div class="top-nav block-with-lazy">
+					<div class="container">
+						<div class="top-nav__row row">
+							<div class="col-auto">
+								<div class="top-nav__logo"><img src="img/svg/logo.svg" alt="" loading="lazy"/>Наверх
+									<svg class="icon icon-arrow-up ">
+										<use xlink:href="img/svg/sprite.svg#arrow-up"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="col d-none d-lg-block">Самый простой способ зарабатывать деньги в трейдинге</div>
+							<div class="col-auto ms-auto">
+								<a class="top-nav__btn btn btn-primary btn-base link-modal-js" href="#modal-call">Получить доступ сейчас
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end top-nav-->
+			</header>
+			<!-- end header-->
 			<main>
 				<!-- start headerBlock-->
 				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-							<svg class="icon icon-telegram ">
-								<use xlink:href="img/svg/sprite.svg#telegram"></use>
-							</svg>
-							<svg class="iconC iconC-telegram ">
-								<use xlink:href="img/svg/spriteC.svg#telegram"></use>
-							</svg>
+					<div class="headerBlock__container container">
+						<div class="headerBlock__img d-none d-lg-block"><img src="img/sHeaderBlock-img-2.png" alt="" loading="lazy"/>
+							<div class="headerBlock__person-text">
+								<div data-bs-toggle="tooltip" data-bs-title="•&amp;nbsp;Частный инвестор, публичная инвестиционная практика с 2018 года.&lt;br&gt; •&amp;nbsp;Организатор инвестиционного сообщества, ведёт свою мастер-группу с 2019 года (более 500 человек).&lt;br&gt; •&amp;nbsp;Топ-автор Инфо-ДВД. Кредо — продуманные инвестиции с минимальными рисками и минимальным участием эмоций.&lt;br&gt; •&amp;nbsp;С 2004 по 2016 год работал в банковской сфере, сделал успешную карьеру в одном из крупнейших федеральных банков.&lt;br&gt; •&amp;nbsp;Специалист по работе с предприятиями сегмента крупного и крупнейшего бизнеса.">
+									<svg class="iconC iconC-info ">
+										<use xlink:href="img/svg/spriteC.svg#info"></use>
+									</svg>
+								</div>
+								<p>Владимир Чамин</p><span>Автор </span>
+							</div>
 						</div>
-						<div class="row"></div>
+						<div class="section-title text-center">
+							<h1>Trading<span>Vision</span>.PRO</h1>
+							<h4>Найдите 10+ прибыльных торговых стратегий за 3 секунды</h4>
+						</div>
+						<div class="headerBlock__row row">
+							<div class="col-sm col-lg-auto order-1">
+								<p>Первый в РФ web-сервис для циклического трейдинга</p>
+							</div>
+							<div class="col-lg order-lg-2 order-3">
+								<div class="headerBlock__content"><img src="img/sHeaderBlock-img-1.png" alt="" loading="lazy"/>
+									<a class="headerBlock__btn btn btn-priamry btn-base link-modal-js" href="#modal-call">Мгновенный доступ к web-сервису
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-auto ms-sm-auto order-lg-3 order-2">
+								<ul> 
+									<li>Закономерности, которые не видят другие трейдеры</li>
+									<li>Поиск на любом финансовом инструменте</li>
+									<li>Нужен только браузер</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end headerBlock-->
@@ -262,39 +306,72 @@
 				</section>
 				<!-- end sContact-->
 			</main>
-			<script>addBlock(`footer`)</script>
-			<div id="footerWrap"></div>
+			<footer class="footer section">
+				<div class="footer__container container">
+					<div class="before">
+						<svg width="146" height="126" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12.8948 0.112088C9.97445 0.474633 7.30197 1.67077 5.11637 3.59348C2.38099 5.99991 0.672099 9.20686 0.193504 12.8316C-0.114646 15.1659 0.152596 17.5863 0.97475 19.908C1.24314 20.6659 1.92827 22.0408 2.40849 22.7853C2.79872 23.3903 3.3936 24.1738 3.90016 24.7501L4.13195 25.0137L4.16934 24.5638C4.24257 23.6829 4.44544 22.9738 4.8033 22.3478C5.00685 21.9918 5.68155 21.3205 6.05921 21.0983C6.33824 20.934 6.37522 20.8926 6.3891 20.7282C6.4056 20.5322 6.40062 20.524 5.79511 19.7483C5.43772 19.2905 5.07677 18.5585 4.9288 17.9915C4.78994 17.4593 4.73704 16.3405 4.82273 15.7468C4.9046 15.179 5.10165 14.389 5.27273 13.9425C5.52462 13.285 6.06989 12.202 6.42246 11.659L6.76634 11.1294V9.99535C6.76634 9.37163 6.78168 8.8613 6.80044 8.8613C6.81919 8.8613 8.22753 9.33032 9.93013 9.90352C11.6327 10.4768 13.1789 10.9794 13.3662 11.0206C13.8103 11.1182 14.8228 11.1173 15.2257 11.019C15.3985 10.9768 16.9129 10.4769 18.5911 9.90799L21.6422 8.87375V9.98449V11.0953L21.9778 11.5621C22.8181 12.7313 23.4227 14.0054 23.7474 15.2917C23.9054 15.9178 23.918 16.0302 23.915 16.7936C23.9125 17.4644 23.8908 17.6985 23.799 18.0447C23.6361 18.6592 23.2769 19.3544 22.8228 19.9346C22.4667 20.3894 22.4282 20.4611 22.4405 20.6466C22.4534 20.8427 22.4728 20.8637 22.8342 21.0725C24.0452 21.7723 24.6909 22.9244 24.8147 24.6062C24.8346 24.877 24.8624 25.0986 24.8764 25.0986C24.8904 25.0986 25.0376 24.9489 25.2035 24.7659C28.2912 21.3583 29.6123 16.8505 28.865 12.2729C28.4003 9.42604 27.0544 6.7028 25.0807 4.61595C22.8857 2.29502 20.2328 0.833025 17.1637 0.252953C16.4843 0.124545 16.3072 0.113419 14.7543 0.101813C13.8324 0.0949452 12.9956 0.0995769 12.8948 0.112088ZM14.8282 3.53886C15.1893 3.5865 16.6577 4.06473 23.1086 6.23553C24.8361 6.81683 25.0196 6.92778 24.7212 7.21036C24.6464 7.28116 22.9716 7.86896 20.0201 8.86028C15.3481 10.4295 15.2001 10.4757 14.6469 10.5375C13.9734 10.6127 13.697 10.5342 8.92255 8.91102C6.43194 8.06428 4.32093 7.32817 4.23147 7.2752C4.03159 7.15691 3.99434 6.97319 4.14357 6.84164C4.26839 6.73154 4.43659 6.67218 9.64681 4.89822C13.8845 3.45533 13.9884 3.42807 14.8282 3.53886ZM8.28535 12.8776C8.28535 12.9491 8.31123 13.0238 8.34287 13.0436C8.3745 13.0635 8.46879 13.1894 8.55239 13.3234C8.78762 13.7004 8.76772 13.9897 8.48178 14.3476C8.03398 14.908 7.95908 15.0162 7.80131 15.3296C7.56125 15.8066 7.44623 16.2332 7.4137 16.767C7.31339 18.4124 8.35806 19.7845 9.93458 20.0782C10.9901 20.2749 12.1287 19.901 12.9443 19.0899L13.2504 18.7855L13.2844 19.0805C13.3565 19.7042 13.7939 20.6077 14.3294 21.2389L14.5101 21.4519L14.7107 21.2174C15.221 20.6211 15.6668 19.7838 15.7481 19.2692C15.8278 18.764 15.7925 18.7732 16.1967 19.1536C17.265 20.1589 18.7741 20.4119 20.0184 19.7943C20.3091 19.65 20.5151 19.4929 20.8105 19.19C21.431 18.5538 21.6946 17.8844 21.6946 16.9446C21.6946 16.0713 21.402 15.2901 20.8038 14.566C20.6375 14.3645 20.4751 14.1501 20.4432 14.0894C20.3164 13.8487 20.4129 13.4879 20.7038 13.1145C20.9762 12.7651 20.9155 12.7258 20.1611 12.7637C18.9522 12.8243 17.7722 13.1115 16.8495 13.5696C16.1027 13.9403 15.6691 14.3559 15.3565 15.0003C14.9737 15.7898 14.9029 16.5127 15.1222 17.3935C15.1576 17.5353 15.1537 17.5388 15.0187 17.4867C14.836 17.4161 14.1739 17.4167 14.0437 17.4876C13.9225 17.5535 13.921 17.5345 14.0215 17.1978C14.1217 16.862 14.1205 16.1187 14.019 15.6811C13.6545 14.1097 12.232 13.1804 9.64723 12.8253C9.34474 12.7837 8.91454 12.7492 8.6913 12.7487C8.29557 12.7476 8.28535 12.7509 8.28535 12.8776ZM10.5199 14.2359C9.88655 14.9483 9.8644 16.0097 10.4685 16.6914C11.3847 17.7251 13.0519 16.8036 13.0519 15.2635C13.0519 14.935 13.1037 14.9358 13.2702 15.2667C13.5111 15.7457 13.5912 16.4548 13.4667 17.0066C13.2245 18.0804 12.2969 18.9776 11.1781 19.2205C10.8033 19.3017 10.69 19.3058 10.34 19.2506C8.59267 18.9748 7.75862 17.1503 8.63274 15.5159C8.96357 14.8974 9.5662 14.3746 10.2267 14.1332C10.6813 13.9671 10.7403 13.9878 10.5199 14.2359ZM18.9368 14.1535C19.7979 14.4829 20.4255 15.1651 20.7291 16.1016C20.8571 16.4963 20.8565 17.2009 20.7278 17.5922C20.5491 18.1354 20.123 18.6861 19.6735 18.9548C19.4276 19.1017 18.7289 19.2962 18.4518 19.2949C18.126 19.2933 17.5429 19.143 17.2016 18.9727C16.1119 18.4288 15.4153 17.1299 15.6124 16.0091C15.6772 15.6408 15.846 15.212 16.0056 15.0102C16.0857 14.909 16.0883 14.9143 16.0593 15.1167C16.0197 15.3929 16.1573 15.9911 16.3289 16.2886C16.8891 17.2602 18.1299 17.4151 18.7459 16.5905C19.2284 15.9444 19.1652 14.8692 18.6065 14.2225C18.4005 13.984 18.4608 13.9714 18.9368 14.1535Z" fill="#DA4053"></path>
+						</svg>
+					</div>
+					<div class="row">
+						<div class="col-md col-lg-5">
+							<div class="footer__left-col">
+								<div class="footer__txt footer__txt--h6">
+									<p>
+										<script>
+											function InfoDVDCurrentYear(year) {
+												var cur = new Date();
+												if (cur.getFullYear() != year)
+													document.write('© ' + year + '&mdash;' + cur.getFullYear() + " ");
+												else document.write(year);
+											}
+											InfoDVDCurrentYear('2008 ');
+										</script>Издательство <a href="//www.info-dvd.ru/?utm_source=footer_link" target="_blank">Инфо-ДВД</a> <br>
+										Проект <a href="//www.infoclub.info/" target="_blank">«Инфоклуб»</a><br>
+										
+										<script src="//info-dvd.ru/codes/js/legal.utf8.js"></script>
+									</p>
+								</div>
+								<div class="footer__txt">
+									<p><a class="tdu" href="//info-dvd.ru/professional/" target="_blank" title="экспертам-авторам (инфо-продюсирование)">экспертам-авторам (инфо-продюсирование)</a><br/><a class="tdu" href="//info-dvd.ru/about/partnership" target="_blank" title="партнёрская программа">партнёрская программа</a><br/><a class="tdu" href="//info-dvd.ru/pages/privacy" target="_blank" title="политика конфиденциальности"> политика конфиденциальности</a><br/><a class="tdu" href="//info-dvd.ru/pages/risk-warning" target="_blank" title="предупреждение о рисках"> предупреждение о рисках</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 col-lg-4 ms-lg-auto">
+							<div class="footer__right-col">
+								<div class="footer__txt footer__txt--support text-lg-end">
+									<h6>Служба поддержки:</h6>
+									<p><a href="//info.support-desk.ru/form" target="_blank" title="Задать свой вопрос">Задать свой вопрос</a><a href="//info.support-desk.ru/?base=1" target="_blank" title="Частые вопросы и ответы на них">Частые вопросы и ответы на них</a></p>
+								</div>
+								<div class="footer__txt text-lg-end">
+									<h6>Позвоните нам:</h6>
+									<p><span>
+											<script src="//info-dvd.ru/codes/js/telephone-number.js"></script></span><br/>или <a class="tdu" href="//info-dvd.ru/support/apply/" target="_blank">оставьте свой номер </a>&nbsp;и мы вам перезвоним</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 		<!--  start modals-->
 		<div id="modal-call" style="display: none">
 			<div class="modal-win">
-				<div class="form-wrap">
-					<form>
-						<div class="text-center">
-							<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+				<div class="ld_progressbar">
+					<div class="progress-bar active" style="width: 50%;"></div>
+				</div>
+				<div class="row">
+					<div class="col d-none d-lg-block">
+						<div class="modal-win__img-wrap"><img src="img/sAuthor-img-2.png" alt="" loading="lazy"/>
+						</div>
+					</div>
+					<div class="col-lg-auto">
+						<div class="modal-win__content">
+							<div class="modal-win__headline">Поздравляем! Вы можете получить доступ бесплатно
 							</div>
-							<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+							<iframe id="ic_sform_13588841707818844_iframe" src="//www.infoclub.info/subscribe_forms/index/163/117e3a80?rid=13588841707818844&amp;loc=https%3A%2F%2Fstart.infoclub.info%2Fcryptostart%2F&amp;ref=" name="ic_sform_13588841707818844_iframe" scrolling="no" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" vspace="0" hspace="0" height="undefined" width="100%" onload="window['SForm_163'].registerFrame(this)" iframe=""></iframe>
 						</div>
-						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Ваше Имя" required="required"/>
-						</div>
-						<!-- +e.input-wrap-->
-						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="tel" name="tel" type="tel" placeholder="Ваше телефон" required="required"/>
-						</div>
-						<!-- +e.input-wrap-->
-						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="tel" name="tel" type="tel" placeholder="Ваше телефон" required="required"/>
-						</div>
-						<!-- +e.input-wrap-->
-						<button class="form-wrap__btn btn" type="submit">submit
-						</button>
-						<div class="form-wrap__policy">
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-							</label>
-						</div>
-						<div class="form-wrap__policy">
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-							</label>
-						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -305,7 +382,7 @@
 		<script src="libs/swiper/swiper-bundle.min.js"> </script>
 		<script src="libs/inputmask/inputmask.min.js"> </script>
 		<script src="libs/select2/js/select2.min.js"> </script>
-		<script src="libs/select2/js/i18n/ru.js"> </script>
+		<script src="libs/select2/js/i18n/ru.js"> </script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="js/JSCCommon.js"></script>
 		<script src="js/common.js"></script>
 	</body>
