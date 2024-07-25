@@ -17,7 +17,10 @@ class JSCCommon {
 		const link = '[data-fancybox="modal"], .link-modal-js';
 		Fancybox.defaults.autoFocus = false;
 		Fancybox.defaults.placeFocusBack = false;
-
+		Fancybox.bind("[data-fancybox]", {
+			autoFocus: false,
+			placeFocusBack: false,
+		});
 		Fancybox.bind(link, {
 			arrows: false,
 			// // infobar: false,
@@ -394,15 +397,21 @@ class JSCCommon {
 	}
 
 	static setFixedNav() {
-		let topNav = document.querySelector('.header');
+		let topNav = document.querySelector(".header");
 		if (!topNav) return;
 		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		// console.log(scrollTop);
 
-		scrollTop > 160 ? topNav.classList.add('fixed') : topNav.classList.remove('fixed');
-		scrollTop > 250 ? topNav.classList.add('fixed-animate') : topNav.classList.remove('fixed-animate');
-		scrollTop > 400 ? topNav.classList.add('fixed-show') : topNav.classList.remove('fixed-show');
-	};
+		scrollTop > 160
+			? topNav.classList.add("fixed")
+			: topNav.classList.remove("fixed");
+		scrollTop > 250
+			? topNav.classList.add("fixed-animate")
+			: topNav.classList.remove("fixed-animate");
+		scrollTop > 400
+			? topNav.classList.add("fixed-show")
+			: topNav.classList.remove("fixed-show");
+	}
 
 	static customSelect() {
 		$(".custom-select-wrap").each(function () {

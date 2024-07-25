@@ -62,12 +62,30 @@ function eventHandler() {
 
 	$('[data-bs-toggle="tooltip"]').tooltip({
 		animation: true,
-		html: true
+		html: true,
 	});
 
-	document.querySelector('.top-nav__logo').addEventListener('click', () => {
+	document.querySelector(".top-nav__logo").addEventListener("click", () => {
 		window.scrollTo(0, 0);
-	})
+	});
+
+	let defSwipers = document.querySelectorAll(".def-swiper-js");
+	for (const defSwiper of defSwipers) {
+		new Swiper(defSwiper.querySelector(".swiper"), {
+			slidesPerView: "auto",
+			loop: true,
+			// autoHeight: true,
+			pagination: {
+				el: defSwiper.querySelector(".swiper-pagination"),
+				type: "bullets",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: defSwiper.querySelector(".swiper-button-next"),
+				prevEl: defSwiper.querySelector(".swiper-button-prev"),
+			},
+		});
+	}
 }
 if (document.readyState !== "loading") {
 	eventHandler();

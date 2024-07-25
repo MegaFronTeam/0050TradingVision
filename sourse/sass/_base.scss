@@ -281,7 +281,10 @@ ul {
 	box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
 	@include mt;
 	user-select: none;
-
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	&:hover {
 		background-color: var(--swiperBgDefHover);
 		border-color: var(--swiperBorderColorDefHover);
@@ -289,7 +292,7 @@ ul {
 	}
 
 	.icon {
-		font-size: rem(12);
+		font-size: rem(10);
 	}
 
 	&::after {
@@ -297,6 +300,9 @@ ul {
 	}
 	&-next {
 		right: var(--swiperArrowPosition);
+		.icon {
+			margin-left: 3px;
+		}
 	}
 
 	&-prev {
@@ -310,15 +316,15 @@ ul {
 
 	&-bullet {
 		opacity: 1;
-		width: 8px;
-		height: 8px;
+		width: 6px;
+		height: 6px;
 		border-radius: 50%;
-		background-color: #e6e6e6;
+		background-color: #26234b;
 		outline: none !important;
 		@include mt;
-		margin-left: rem(8);
+		margin-left: rem(4);
 		// padding-right: rem(8);
-		margin-right: rem(5);
+		margin-right: rem(4);
 		display: inline-block;
 
 		&-active,

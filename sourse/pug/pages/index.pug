@@ -7,13 +7,7 @@ include ../blocks/topLine/_topLine.pug
 include ../blocks/top-nav/_top-nav.pug 
 
 include ../blocks/headerBlock/_headerBlock.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sContent/_sContent.pug
- 
-include ../blocks/sContact/_sContact.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sOpen/_sOpen.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -30,14 +24,6 @@ block pagecontent
 		+top-nav()
 	main
 		+headerBlock 
-		.container
-			.section-wrap
-				.section-title.text-center
-					h2 Lorem, ipsum.
-					h4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe fugit eveniet aperiam optio cumque aspernatur suscipit sint corrupti eum.
-				.btn.btn-primary.btn-base(href='#') Заполните календарь прибыльными циклами прямо сегодня
-		+sCatalog
-		+sForm()
-		+sContact()
+		+sOpen
 		
 	+footer
