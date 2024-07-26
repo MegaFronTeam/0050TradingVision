@@ -1,0 +1,26 @@
+mixin sTraidingByCalenda(data)
+	// start sTraidingByCalenda
+	+b.SECTION.sTraidingByCalenda.section#sTraidingByCalenda&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Трейдинг по календарю – просто и прибыльно!
+				h4 Пример годовой циклической стратегии.
+			+e.row.row
+				.col-lg-auto
+					+e.wrap
+						+img('/img/svg/sTraidingByCalenda-img-1.svg').img-1
+						h4 Акции ВТБ
+						p Покупка #[span 27 марта]
+						p Продажа через #[span 8 торговых дней]
+						+e.info
+							+iconC('info')
+							p Обратите внимание,<br/>насколько волшебно<br/>отработал цикл в&nbsp;этом году:
+				.col-lg.text-end: +img('img/sTraidingByCalenda-img-1.png').res-i
+			+e.messages
+				+e.message
+					+img('img/avatar.png')
+					p И что, я должен потом ждать целый год, чтобы совершить новую сделку?
+				+e.message
+					p Конечно, нет. Находите с помощью TradingVision.PRO циклы на других активах, заносите их в свой календарь и зарабатывайте больше с каждым новым циклом.
+					+img('img/avatar-2.png')
+	// end sTraidingByCalenda

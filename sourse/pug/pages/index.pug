@@ -8,6 +8,12 @@ include ../blocks/top-nav/_top-nav.pug
 
 include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sOpen/_sOpen.pug
+include ../blocks/sHideAndSeek/_sHideAndSeek.pug
+include ../blocks/sBanner/_sBanner.pug
+include ../blocks/sHowLoopsWork/_sHowLoopsWork.pug
+include ../blocks/sTraidingByCalenda/_sTraidingByCalenda.pug
+include ../blocks/sMainRule/_sMainRule.pug
+include ../blocks/sThreeSteps/_sThreeSteps.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -25,5 +31,10 @@ block pagecontent
 	main
 		+headerBlock 
 		+sOpen
-		
+		+sHideAndSeek
+		+sBanner
+		+sHowLoopsWork
+		+sTraidingByCalenda
+		+sMainRule
+		+sThreeSteps
 	+footer
