@@ -1,0 +1,56 @@
+// start .sPromo
+.sPromo {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: #{rem(20)};
+    @include media-breakpoint-up(lg) {
+    margin-left: rem(-30);
+    margin-right: rem(-30);
+    }
+	}
+	.section-title{
+		
+	}
+  h2 span {
+    color: $primary;
+  }
+	ul {
+    margin-left: rem(26);
+    margin-bottom: 0;
+  }
+  li:not(:last-child) {
+    margin-bottom: rem(8);
+  }
+	.item{
+		margin-bottom: rem(64);
+	}
+  .wrap {
+    
+	@include media-breakpoint-up(lg) {
+    max-width: rem(600);
+  }
+  }
+  .card_blue {
+    border-radius: rem(20);
+    background: $primary;
+    color: $white;
+    padding: rem(24);
+    padding-right: rem(12);
+    @include media-breakpoint-up(lg) {
+      max-width: rem(429);
+      margin-left: auto;
+    }
+  }
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPromo

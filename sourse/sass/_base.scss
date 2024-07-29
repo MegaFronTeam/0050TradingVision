@@ -440,6 +440,10 @@ iframe {
 .form-select {
 	box-shadow: none !important;
 }
+.form-control {
+  background-color: $white;
+  border-color: #E0E0E0;
+}
 
 .fancybox__content :focus:not(.carousel__button.is-close) {
 	outline: none !important;
@@ -563,4 +567,20 @@ p {
 		border-radius: 8px;
 		max-width: rem(450);
 	}
+}
+
+.btn-primary {
+
+	--bs-btn-padding-x: #{rem(16)};
+	--bs-btn-padding-y: #{rem(12)};
+	--bs-btn-font-size: #{rem(16)};
+	--bs-btn-font-weight: 700;
+	--bs-btn-line-height: 1.4;
+	--bs-btn-border-radius: #{rem(12)};
+
+	--bs-btn-color: #fff;
+	--bs-btn-hover-color: #fff;
+
+	--bs-btn-active-color: #fff;
+	box-shadow: 0px 4px 11.4px rgba(0, 189, 148, 0.71) !important;
 }

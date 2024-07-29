@@ -1,0 +1,21 @@
+mixin sSuccess(data)
+	// start sSuccess
+	+b.SECTION.sSuccess.section#sSuccess&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 У них получилось, и у Вас получится!
+			+e.item
+				+reviewItem('review-1')
+				+reviewItem('review-2')
+				+reviewItem('review-3')
+				+reviewItem('review-4')
+			+e.item--wide
+				+reviewItem('review-5')
+				+reviewItem('review-6')
+				+reviewItem('review-7')
+				+reviewItem('review-8')
+			.text-center: +btnBase('Хочу присоединиться к команде успешных циклических трейдеров!')
+	// end sSuccess
+
+mixin reviewItem(img)
+	+b.review-item(data-fancybox='review' data-src=`img/${img}.png`): +img(`img/${img}.png`)

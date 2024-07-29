@@ -18,6 +18,11 @@ include ../blocks/sItsEasy/_sItsEasy.pug
 include ../blocks/sEasyWay/_sEasyWay.pug
 include ../blocks/sFacts/_sFacts.pug
 
+include ../blocks/sBenefits/_sBenefits.pug
+include ../blocks/sApply/_sApply.pug
+include ../blocks/sQA/_sQA.pug
+include ../blocks/sPromo/_sPromo.pug
+include ../blocks/sSuccess/_sSuccess.pug
 block variables
 	- let  mainPage= 'main-page' 
 	- let  bg= null
@@ -33,14 +38,21 @@ block pagecontent
 		+top-nav()
 	main
 		+headerBlock 
-		+sOpen
-		+sHideAndSeek
-		+sBanner
-		+sHowLoopsWork
-		+sTraidingByCalenda
-		+sMainRule
-		+sThreeSteps
-		+sItsEasy
+		//- +sOpen
+		//- +sHideAndSeek
+		//- +sBanner
+		//- +sHowLoopsWork
+		//- +sTraidingByCalenda
+		//- +sMainRule
+		//- +sThreeSteps
+		//- +sItsEasy
 		+sEasyWay
-		+sFacts
+		//- +sFacts
+
+
+		+sBenefits
+		+sApply
+		+sQA
+		+sPromo
+		+sSuccess
 	+footer

@@ -1,0 +1,19 @@
+mixin sApply(data)
+	// start sApply
+	+b.SECTION.sApply.section#sApply&attributes(attributes)
+		.container
+			.section-wrap
+				+b.section-title.text-center
+					h2 Как получить доступ к TradingVision.PRO прямо сейчас?
+					h4 Всего 5 простых шагов:
+				+e.row.row
+				+e.form.form
+					.form-title.text-center
+						h3 Лучшие условия доступны самым быстрым!
+						p Введите свои данные прямо сейчас, чтобы выбрать выгодный комплект:
+					+form-wrap
+						+input("Ваше имя",'text')
+						+input("+7 ( ____ ) ____ - ___ - ___",'tel')
+						+input("E-mail (необязательно)",'email')
+						+e.btn.btn.btn-primary(type="submit") Отправить
+	// end sApply
