@@ -1,0 +1,18 @@
+mixin sAuthor(data)
+	// start sAuthor
+	+b.SECTION.sAuthor.section#sAuthor&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Автор-разработчик web-сервиса TradingVision.PRO
+				h4 Владимир Чамин
+			+e.row.row
+			.section-wrap
+				.text-center: h3 Вот, что ученики говорят про обучение у Владимира Чамина
+				+defSlider
+					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
+				.text-center: +btnBase('Хочу попасть в команду успешных учеников Владимира Чамина')
+	// end sAuthor

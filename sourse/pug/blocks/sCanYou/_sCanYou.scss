@@ -1,0 +1,63 @@
+// start .sCanYou
+.sCanYou {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+    margin-bottom: rem(57);
+	}
+	.section-title{
+		
+	}
+	&__col{
+		
+	}
+	&__item{
+		
+	}
+  span {
+    font-weight: 700;
+  }
+
+  ul {
+    margin-left: rem(24);
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: rem(12);
+  }
+
+  li {
+    line-height: 150%;
+    font-size: rem(13);
+    margin-bottom: rem(8);
+  }
+
+  &__descr-wrap {
+    max-width: rem(601);
+  }
+
+  &__img-wrap {
+    
+	@include media-breakpoint-up(lg) {
+    transform: translateX(30px);
+  }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sCanYou

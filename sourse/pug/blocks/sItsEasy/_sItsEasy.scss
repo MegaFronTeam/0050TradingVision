@@ -23,6 +23,15 @@
 		max-width: max-content;
 		margin: 0 auto;
 	}
+
+  &__title {
+		max-width: rem(762);
+    margin: auto;
+    margin-bottom: rem(32);
+    p {
+      margin-bottom: rem(32);
+    }
+  }
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {
