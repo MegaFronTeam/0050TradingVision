@@ -8,12 +8,7 @@
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-	.section-title{
-		
-	}
-	&__col{
-		
-	}
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 5.2%);
 	&__item{
 		max-width: rem(732);
     margin: auto;
