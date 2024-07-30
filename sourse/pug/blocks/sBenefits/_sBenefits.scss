@@ -1,7 +1,7 @@
 // start .sBenefits
 .sBenefits {
 	// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	--sPB: #{rem(10)};
 	// --sTPB: #{rem()};
 	
 	&__row{
@@ -73,7 +73,8 @@
         }
         z-index: 2;
         background-repeat: no-repeat;
-        background-image: url("data:image/svg+xml,%3Csvg width='17' height='20' viewBox='0 0 17 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10H12.5M12.5 10L4.5 2M12.5 10L4.5 18' stroke='%2300B3F5' stroke-width='5' /%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6307_80)'%3E%3Cmask id='mask0_6307_80' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='16' height='20'%3E%3Cpath d='M16 20V0L0 0L0 20H16Z' fill='white' /%3E%3C/mask%3E%3Cg mask='url(%23mask0_6307_80)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.1499 10.3213L13.5874 11.973L6.05636 19.9343L2.84435 16.7223L6.69004 12.6572H7.49461e-07L0 7.98535H6.69013L2.51027 3.56688L5.80747 0.445312L13.5874 8.66954L15.1499 10.3213Z' fill='%2300B3F5' /%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6307_80'%3E%3Crect width='16' height='20' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        // background-image: url("data:image/svg+xml,%3Csvg width='17' height='20' viewBox='0 0 17 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10H12.5M12.5 10L4.5 2M12.5 10L4.5 18' stroke='%2300B3F5' stroke-width='5' /%3E%3C/svg%3E");
       }
     }
 

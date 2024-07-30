@@ -4,9 +4,14 @@ mixin sApply(data)
 		.container
 			.section-wrap
 				+b.section-title.text-center
-					h2 Как получить доступ к TradingVision.PRO прямо сейчас?
+					h2 Как получить доступ к Trading#[span Vision].PRO прямо сейчас?
 					h4 Всего 5 простых шагов:
 				+e.row.row
+					+stepCard('Введите Ваши данные и нажмите кнопку «Продолжить».')
+					+stepCard('Вам откроется страница с описанием версий участия и комплектации')
+					+stepCard('Если необходимо, Вас бесплатно проконсультирует специалист Инфо-ДВД')
+					+stepCard('Выберите подходящую версию участия, оплатите ее стоимость')
+					+stepCard('Уже через одну минуту после оплаты Вам откроется доступ к сервису и в закрытую группу Инфоклуба с обучающими материалами')
 				+e.form.form
 					.form-title.text-center
 						h3 Лучшие условия доступны самым быстрым!
@@ -17,3 +22,9 @@ mixin sApply(data)
 						+input("E-mail (необязательно)",'email')
 						+e.btn.btn.btn-primary(type="submit") Отправить
 	// end sApply
+
+mixin stepCard(text)
+	+e.col.col-sm-6.col-lg
+		+b.step-card
+			p= text
+			+img(`img/svg/arrow-bl.svg`).arrow
