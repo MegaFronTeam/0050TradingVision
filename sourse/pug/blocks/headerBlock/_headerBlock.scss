@@ -7,14 +7,28 @@
 		--sPT: #{rem(112.600)};
 		--sPB: #{rem(60)};
 	}
+  
+  &.curcle-blur .container {
+    --cercle-width: 710px;
+    // position: relative;
+    // z-index: 0;
+    &::before, &::after {
+      filter: blur(120px);
+    }
+    &::before {
+      transform: translate(-80%, -40%);
+    }
+  }
 	&__container {
 		position: relative;
 	}
+
 	&__img {
 		position: absolute;
 		left: rem(38);
 		bottom: rem(-60);
 	}
+
 	&__person-text {
 		position: absolute;
 		right: rem(-54);

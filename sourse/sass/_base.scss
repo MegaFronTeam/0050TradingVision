@@ -112,10 +112,48 @@ main {
 }
 
 .section {
-	@include bgs;
+  &:not(#sSuccess) {
+    position: relative;
+    z-index: 0;
+  }
+
+	// @include bgs;
 	padding-top: var(--sPT);
 	padding-bottom: var(--sPB);
 }
+
+.curcle-blur .container {
+  --cercle-width: 900px;
+	position: relative;
+  z-index: 1;
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: -300px;
+    width: var(--cercle-width);
+    height: var(--cercle-width);
+    filter: blur(300px);
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  &:before {
+    left: 0;
+    // transform: translateX(-62%);
+    transform: translateX(-100%);
+    background: $teal;
+  }
+
+  &:after {
+    right: 0;
+    transform: translate(100%, 50%);
+    background: $primary;
+  }
+}
+// .container {
+//   position: relative;
+//   z-index: 1;
+// }
 
 .section-title {
 	margin-bottom: var(--sTPB);
