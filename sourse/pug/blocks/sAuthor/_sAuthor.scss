@@ -2,26 +2,32 @@
 .sAuthor {
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sTPB: #{rem(30)};
 	
 	&__row{
 		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
-	}
-	.section-title{
-		
-	}
-	&__col{
-		
-	}
-	&__item{
-		
+		--bs-gutter-y: #{rem(30)};
+		align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
 	}
 
-  .section-wrap:before {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  .section-wrap {
+    &:first-child {
+      padding-bottom: rem(47);
+      padding-left: 0;
+      padding-right: 0;
+      &::before {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    }
+    &:last-child::before {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
+
   .swiper-slide img {
     @include media-breakpoint-up(lg) {
       max-width: rem(761);
@@ -39,6 +45,92 @@
   .btn {
     margin-top: rem(60);
     margin-bottom: rem(20);
+  }
+
+  .man {
+    width: 100%;
+    display: block;
+    position: static;
+    max-width: rem(300);
+    transform: translateY(calc(var(--sPB) * 2 ));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      margin-right: 0;
+      z-index: -1;
+    }
+    @include media-breakpoint-up(lg) {
+      bottom: calc(var(--sPB) * -2 );
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: rem(370);
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: rem(509);
+    }
+  }
+
+  ul {
+		list-style-type: none;
+		margin-bottom: 0;
+		li {
+      font-weight: 500;
+      z-index: 0;
+      line-height: 130%;
+			@include media-breakpoint-up(lg) {
+				max-width: rem(300);
+			}
+			&:before {
+				content: '';
+        z-index: 1;
+				display: block;
+				width: rem(110);
+				height: rem(1);
+        margin-bottom: rem(8);
+        background: $gray-900;
+        opacity: .2;
+			}
+			&:not(:last-child) {
+				margin-bottom: rem(18);
+				@include media-breakpoint-up(lg) {
+					margin-bottom: rem(20);
+				}
+			}
+		}
+	}
+
+  
+  position: relative;
+  overflow: hidden;
+	&__content {
+    .h6 {
+      margin-bottom: rem(23);
+      font-weight: 500;
+      line-height: 130%;
+      @include media-breakpoint-up(lg) {
+        max-width: rem(250);
+      }
+    }
+    @include media-breakpoint-up(md) {
+      max-width: rem(300);
+    }
+		@include media-breakpoint-up(lg) {
+      margin-left: auto;
+			max-width: rem(267);
+      // margin-right: rem(10);
+      margin-bottom: rem(-20);
+		}
+
+    p {
+      font-size: rem(13);
+      line-height: 140%;
+      opacity: 0.5;
+      margin-bottom: rem(23);
+    }
   }
 
 	@include media-breakpoint-up(xl) {}

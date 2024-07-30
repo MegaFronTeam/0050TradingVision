@@ -496,6 +496,11 @@ iframe {
 			left: calc(var(--bs-gutter-x) / -2);
 		}
 	}
+  &--green {
+    &:before {
+      background: linear-gradient(136deg, #d2f3ff 0%, #bffff1 100%);
+    }
+  }
 }
 
 .container {
