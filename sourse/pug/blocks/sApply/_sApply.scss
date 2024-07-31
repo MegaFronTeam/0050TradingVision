@@ -42,16 +42,19 @@
   .form-group, .form-control {
     margin-bottom: 0;
   }
-  form {
-    display: grid;
-    gap: rem(9);
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include media-breakpoint-up(xl) {
-      grid-template-columns: repeat(3, 1fr) min-content;
-    }
+  .inbfrm {
+    margin: auto;
   }
+  // form {
+  //   display: grid;
+  //   gap: rem(9);
+  //   @include media-breakpoint-up(lg) {
+  //     grid-template-columns: repeat(2, 1fr);
+  //   }
+  //   @include media-breakpoint-up(xl) {
+  //     grid-template-columns: repeat(3, 1fr) min-content;
+  //   }
+  // }
 
   .btn {
     height: calc(100% - 8px);
