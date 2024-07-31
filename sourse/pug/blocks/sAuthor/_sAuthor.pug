@@ -25,10 +25,7 @@ mixin sAuthor(data)
 			.section-wrap
 				.text-center: h3 Вот, что ученики говорят про обучение у Владимира Чамина
 				+defSlider
-					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
-					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
-					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
-					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
-					+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/sAuthor-img-1.png`): +img(`img/sAuthor-img-1.png`).res-i
+					- for (var i = 1; i <= 17; i++)
+						+e.slide.swiper-slide(data-fancybox='modal-Author' data-src=`img/st-review-${i}.png`): +img(`img/st-review-${i}.png`).res-i
 				.text-center: +btnBase('Хочу попасть в команду успешных учеников Владимира Чамина')
 	// end sAuthor
