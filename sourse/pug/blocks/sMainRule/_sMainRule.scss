@@ -6,6 +6,7 @@
 	@include media-breakpoint-up(lg) {
 		--sPB: #{rem(64)};
 	}
+	z-index: 2;
 
 	counter-reset: num;
 	&__row {

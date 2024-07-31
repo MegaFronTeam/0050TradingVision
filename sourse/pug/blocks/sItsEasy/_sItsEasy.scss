@@ -3,6 +3,7 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	--sTPB: #{rem(32)};
+	z-index: 2;
 
 	&__img-wrap {
 		@include block(591, 1140);

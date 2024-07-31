@@ -3,7 +3,7 @@
 	// --sPT: #{rem()};
 	--sPB: #{rem(16)};
 	// --sTPB: #{rem()};
-	
+	z-index: 2;
 	counter-reset: num;
 	&__row{
 		--bs-gutter-x: #{rem(8)};
