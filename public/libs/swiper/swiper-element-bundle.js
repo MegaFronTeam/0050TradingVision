@@ -1,5 +1,5 @@
 /**
- * Swiper Custom Element 11.1.8
+ * Swiper Custom Element 11.1.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: July 26, 2024
+ * Released on: July 24, 2024
  */
 
 (function () {
@@ -353,7 +353,7 @@
   function elementIsChildOf(el, parent) {
     const isChild = parent.contains(el);
     if (!isChild && parent instanceof HTMLSlotElement) {
-      const children = [...parent.assignedElements()];
+      const children = [...element.assignedElements()];
       return children.includes(el);
     }
     return isChild;
@@ -9642,7 +9642,7 @@
   }
 
   /**
-   * Swiper 11.1.8
+   * Swiper 11.1.7
    * Most modern mobile touch slider and framework with hardware accelerated transitions
    * https://swiperjs.com
    *
@@ -9650,7 +9650,7 @@
    *
    * Released under the MIT License
    *
-   * Released on: July 26, 2024
+   * Released on: July 24, 2024
    */
 
 
@@ -9977,7 +9977,7 @@
   }
 
   /**
-   * Swiper Custom Element 11.1.8
+   * Swiper Custom Element 11.1.7
    * Most modern mobile touch slider and framework with hardware accelerated transitions
    * https://swiperjs.com
    *
@@ -9985,7 +9985,7 @@
    *
    * Released under the MIT License
    *
-   * Released on: July 26, 2024
+   * Released on: July 24, 2024
    */
 
 

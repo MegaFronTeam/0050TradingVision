@@ -112,10 +112,10 @@ main {
 }
 
 .section {
-  &:not(#sSuccess) {
-    position: relative;
-    // z-index: 0;
-  }
+	&:not(#sSuccess) {
+		position: relative;
+		// z-index: 0;
+	}
 
 	// @include bgs;
 	padding-top: var(--sPT);
@@ -123,32 +123,33 @@ main {
 }
 
 .curcle-blur .container {
-  --cercle-width: 900px;
+	--cercle-width: 900px;
 	position: relative;
-  z-index: 1;
-  &::before, &::after {
-    content: '';
-    position: absolute;
-    top: -300px;
-    width: var(--cercle-width);
-    height: var(--cercle-width);
-    filter: blur(300px);
-    z-index: -1;
-    border-radius: 50%;
-  }
+	z-index: 1;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: -300px;
+		width: var(--cercle-width);
+		height: var(--cercle-width);
+		filter: blur(300px);
+		z-index: -1;
+		border-radius: 50%;
+	}
 
-  &:before {
-    left: 0;
-    // transform: translateX(-62%);
-    transform: translateX(-100%);
-    background: $teal;
-  }
+	&:before {
+		left: 0;
+		// transform: translateX(-62%);
+		transform: translateX(-100%);
+		background: $teal;
+	}
 
-  &:after {
-    right: 0;
-    transform: translate(100%, 50%);
-    background: $primary;
-  }
+	&:after {
+		right: 0;
+		transform: translate(100%, 50%);
+		background: $primary;
+	}
 }
 // .container {
 //   position: relative;
@@ -479,8 +480,8 @@ iframe {
 	box-shadow: none !important;
 }
 .form-control {
-  background-color: $white;
-  border-color: #E0E0E0;
+	background-color: $white;
+	border-color: #e0e0e0;
 }
 
 .fancybox__content :focus:not(.carousel__button.is-close) {
@@ -534,11 +535,11 @@ iframe {
 			left: calc(var(--bs-gutter-x) / -2);
 		}
 	}
-  &--green {
-    &:before {
-      background: linear-gradient(136deg, #d2f3ff 0%, #bffff1 100%);
-    }
-  }
+	&--green {
+		&:before {
+			background: linear-gradient(136deg, #d2f3ff 0%, #bffff1 100%);
+		}
+	}
 }
 
 .container {
@@ -613,7 +614,6 @@ p {
 }
 
 .btn-primary {
-
 	--bs-btn-padding-x: #{rem(16)};
 	--bs-btn-padding-y: #{rem(12)};
 	--bs-btn-font-size: #{rem(16)};
@@ -626,4 +626,8 @@ p {
 
 	--bs-btn-active-color: #fff;
 	box-shadow: 0px 4px 11.4px rgba(0, 189, 148, 0.71) !important;
+}
+
+.inbfrm.v2 {
+	opacity: 1 !important;
 }
