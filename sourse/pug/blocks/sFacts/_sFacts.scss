@@ -6,6 +6,7 @@
 	z-index: 2;
 
 	&__row {
+		position: relative;
 		padding: rem(23.36) 0;
 		&:not(:last-child) {
 			border-bottom: 1px solid #e3e1ff;
@@ -86,6 +87,20 @@
 			background-color: #fff;
 			margin-bottom: 0;
 		}
+	}
+	.text {
+		position: relative;
+		max-width: max-content;
+		padding-right: rem(40);
+	}
+	.arrow {
+		position: absolute;
+		right: 0;
+		top: rem(-10);
+		margin-bottom: 0;
+	}
+	&__inner-row {
+		position: relative;
 	}
 	@include media-breakpoint-up(xl) {
 	}
